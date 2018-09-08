@@ -1,0 +1,31 @@
+
+
+
+<div class="container-fluid" style="background-color: rgba(0, 195, 192, 0.452);
+opacity: 0.946;">
+
+   <div class="container" style="padding-top: 25px;width:inherit">
+       <div class="row">
+           <div class="panel panel-default">
+               <div class="panel-heading" style="text-align: center">
+                   <h2 style="color: rgb(0, 0, 0)">Projects Complated</h2>
+                   <span class="label label-default"> This uses routing with parameters as well as optional
+                     parameters </span>
+               </div>    
+               
+               <div class="panel-body">
+                   
+                   <ul class="list-group">
+                       <li mycustomdir class="list-group-item" *ngFor = "let project of projects" 
+                       (click) = "onProjectClick(project.id)">
+                          {{project.title}}
+                       </li>
+                       
+           
+                   </ul>
+
+           </div>
+
+       </div>
+</div>
+   </div>

@@ -1,0 +1,23 @@
+<div class="container-fluid" style="background-color: rgba(0, 195, 192, 0.452);
+opacity: 0.946;">
+
+   <div class="container" style="padding-top: 25px;width:inherit">
+       <div class="row" *ngFor="let project of projects">
+           <div class="panel panel-default" *ngIf="selectedProject == project.id">
+               <div class="panel-heading" style="text-align: center">
+                   <h2 style="color: rgb(0, 0, 0)">{{project.title}}</h2>
+                   <span class="label label-default"> This uses routing with parameters as well as optional
+                     parameters </span>
+                     
+                    </div>
+                       <div class="panel-body" [innerHTML] = "project.desc"  style="height: 400px; text-align: center;padding-top: 100px">
+                    </div>   
+                    <div class="panel-body" style="text-align: center;color: rgb(0, 195, 192)">
+                            <span (click)="onPrevClick(project.id)"><i class="fa fa-arrow-left" style="font-size: 25px"></i></span>
+                            <span (click)=" onNextClick(project.id)" style="margin-left: 20px;"><i class="fa fa-arrow-right" style="font-size: 25px"></i></span>
+                          </div>   
+                       
+       </div>
+</div>
+   </div>
+   </div>

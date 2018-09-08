@@ -1,0 +1,45 @@
+
+
+<div class="container-fluid" style="background-color: rgba(0, 195, 192, 0.452);
+ opacity: 0.946;">
+
+    <div id="mytech" class="container" style="padding-top: 25px;width:inherit">
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2 style="color: rgb(0, 0, 0)">Known Technologies</h2>
+                    <span class="label label-default">This is using ngFor </span>
+                </div>    
+                
+                <div class="panel-body">
+                    
+                    <!-- <ul class="list-group">
+                        <li class="list-group-item" *ngFor = "let tech of technologies">
+                           {{tech}}
+                        </li>
+                        
+            
+                    </ul> -->
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default" *ngFor = "let tech of technologies">
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a mycustomdir data-toggle="collapse" 
+                              data-parent="#accordion" [href]="getUrl(tech.subject)">{{tech.subject}}</a>
+                            </h4>
+                          </div>
+                          <div [id]="tech.subject" class="panel-collapse collapse out">
+                            <div class="panel-body" [innerHTML]="tech.desc"></div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                
+
+            </div>
+
+        </div>
+</div>
+    </div>

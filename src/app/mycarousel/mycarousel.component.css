@@ -1,0 +1,23 @@
+.carousel,.carousel-inner,.carousel-inner>.item {
+    height: 400px;
+    margin: 0;
+    width: 100%;
+    
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    height: inherit;
+    width: inherit;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .carousel,.carousel-inner,.carousel-inner>.item {
+        height: 250px;
+             
+    }
+
+    .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+        height: inherit;
+        width: inherit;
+    }
+}

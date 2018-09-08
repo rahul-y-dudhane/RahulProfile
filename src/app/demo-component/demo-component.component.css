@@ -1,0 +1,21 @@
+p {
+    font-size: 100px;
+    font-style: italic;
+    background-color: cyan;
+    font-style:oblique;
+}
+img{
+    width: 320px;
+    height: 320px;
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center
+    
+}
+span{
+    font-size: 20px;
+    align-self: center;
+}

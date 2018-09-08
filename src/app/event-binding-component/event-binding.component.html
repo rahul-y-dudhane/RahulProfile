@@ -1,0 +1,58 @@
+<my-mycarousel></my-mycarousel>
+<div class="container" style="margin-top: 10px">
+
+    <div class="row" style="padding: 10px">
+        <div class="col-sm-6 col-xs-12 center" style="padding: 20px;height: 400px;
+        background-color: rgb(121, 250, 207,0.7);">
+            
+            <div class="row" style="color: rgba(0, 0, 0, 0.849)">
+
+                <div [innerHTML]="imageUrl" class="center">
+                    
+                </div>
+                
+                <div class="center">
+                    <span [innerHTML]="name">
+                    </span>
+                </div>
+                <div class="center">
+                    <span [innerHTML]="emailId">
+                    </span>
+                    
+                </div>
+            </div>
+                <div class="row" style="margin-top: 20px">
+                    
+                <button (click) = "display()" class="btn btn-primary">{{buttonText}}</button>
+                <div class="label label-default">This is Event Binding</div>
+            </div>
+            
+            
+        </div>
+        
+    
+    
+    <div class="col-sm-6 col-xs-12 center" 
+    style="height: 400px;background-color: rgb(208, 255, 239 ,0.7);
+    padding: 20px;">
+    <div style="margin-top: 70px">
+
+        Enter your name :- <input type="text" [(ngModel)] = "visitoName"/>
+        <div class="label label-default">This is two way binding and ngIf</div>
+        <div class="container" *ngIf="visitoName?.trim()" style="width: inherit">
+            <div class="row">
+
+                <h3 mycustomdir class="center" 
+                style="margin-top: 50px;color: rgba(0, 0, 0, 0.788)" >Thank you {{visitoName}} for visiting my profile
+            </h3>
+        </div>
+        <div class="row">
+
+            <div class="label label-default">Example of attribute directives . when mouse comes over color get changed</div>
+        </div>
+    </div>
+    </div>
+        
+    </div>
+    </div>
+</div>
